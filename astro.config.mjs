@@ -5,6 +5,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://ztu-schedule.github.io',
   vite: {
       plugins: [tailwindcss()],
 	},
