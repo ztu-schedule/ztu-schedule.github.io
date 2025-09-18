@@ -84,7 +84,7 @@ export default function DebloatBuilder() {
     params.set("location", rawURL);
     params.set("title", "ZTU Schedule");
 
-    return "adp:subscribe?" + params.toString();
+    return "abp:subscribe?" + params.toString();
   }, [rawURL]);
 
 
