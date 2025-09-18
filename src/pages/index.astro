@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-import { Button } from '@/components/ui/button.tsx';
+import FormDemo from '@/components/DebloatBuilder';
 ---
 
 <html lang="en">
@@ -10,13 +10,12 @@ import { Button } from '@/components/ui/button.tsx';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
+		<title>Покращувач розкладу | Житомирська політехніка</title>
 	</head>
 
 	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+		<div class="grid place-items-center h-screen content-center min-h-[100dvh] bg-secondary-background bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] px-5 pt-[70px] prose-h4:xl:text-2xl prose-h4:lg:text-xl prose-h4:text-lg">
+			<FormDemo client:load />
 		</div>
 	</body>
 </html>
